@@ -15,9 +15,9 @@ const CONTENT = {
   /* 首屏关键数字 */
   stats: [
     { num: "2026", label: "级新生 · 代表领校徽" },
-    { num: "9",    label: "GitHub stars" },
+    { num: "10",   label: "GitHub stars" },
     { num: "5000m+", label: "技术型雪山" },
-    { num: "5",    label: "个开源项目" }
+    { num: "6",    label: "个开源项目" }
   ],
 
   avatar: "./images/newcomer-rep.jpg",
@@ -61,7 +61,7 @@ const CONTENT = {
     { period: "小学", title: "第一次接触计算机与机器人", desc: "学习 JavaScript 和初级机器人编程,参加省、市级机器人比赛,在中鸣 RIC 机器人项目中获二等奖、一等奖。", tags: ["JavaScript", "中鸣 RIC", "省市级奖项"] },
     { period: "中学", title: "NOIP 培训:系统学习 C++", desc: "参加学校 NOIP 培训,系统学习 C++ 与算法基础,这是第一次按「工程方式」写代码。", tags: ["C++", "算法"] },
     { period: "中学", title: "Godot 引擎的第一个小游戏", desc: "用 C 语言配合 Godot 引擎完成初级小游戏,完整走了一遍从想法、写代码到能玩的过程。", tags: ["Godot", "C", "游戏开发"] },
-    { period: "中学", title: "自学 Python 与 HTML,发布个人网站", desc: "自学 Python 和 HTML,陆续发布个人网站(共三个)。", tags: ["Python", "HTML"] },
+    { period: "中学", title: "自学 Python 与 HTML,发布个人网站", desc: "自学 Python 和 HTML,陆续发布个人网站。用 Python + Streamlit 独立开发并上线了一个多 AI 交互系统,永久免费开源 —— 这是我第一个真正部署到公网、别人能打开用的作品。", tags: ["Python", "Streamlit", "已上线"] },
     { period: "中学", title: "Arduino 超声波雷达", desc: "自学 Arduino,参照开源项目加装超声波传感器,独立完成一个简易雷达。", tags: ["Arduino", "传感器"] },
     { period: "中学", title: "RobotMaster 机甲大师 · 无人机改造", desc: "加入中学 RobotMaster 机甲大师社团,负责无人机的改造工作。", tags: ["RoboMaster", "无人机"] },
     { period: "现在", title: "深入 AI:Transformer 与 AI 编程工具", desc: "通过阅读 Attention Is All You Need 等论文熟悉 Transformer 架构,熟练使用 vibe coding 工具,并在 GitHub 发布多个项目、收获多个 stars。", tags: ["Transformer", "GitHub"] },
@@ -89,6 +89,15 @@ const CONTENT = {
       tags: ["Godot", "C 语言", "游戏开发"],
       image: "",
       link: "https://github.com/RazorEdge-wyh/one-shot-godot",
+      featured: false
+    },
+    {
+      title: "多 AI 交互系统 · AImeetingPROJECT",
+      kicker: "Python + Streamlit · 已上线运行",
+      desc: "可视化多 AI 交互系统,包含辩论、阶梯式递进讨论、方案评审、头脑风暴,甚至狼人杀在内的 7 种会议模式。由我独立开发并部署上线,永久免费开源。免费版 Streamlit 空闲后会休眠,首次打开点一下「Yes, get this app back up!」等约 30 秒即可。",
+      tags: ["Python", "Streamlit", "多 AI 交互", "已上线"],
+      image: "",
+      link: "https://aimeetinguipy-buikwpsprif94b8nufhrd4.streamlit.app/",
       featured: false
     },
     {
@@ -124,6 +133,7 @@ const CONTENT = {
   reposTitle: "开源项目",
   reposLede: "在 GitHub 上发布的项目,数据取自仓库真实信息。",
   repos: [
+    { name: "AImeetingPROJECT", stars: 1, lang: "Python", desc: "可视化多 AI 交互系统,7 种会议模式(辩论 / 阶梯式递进讨论 / 方案评审 / 头脑风暴 / 狼人杀 等),独立开发并部署上线,永久免费开源。", link: "https://github.com/wyyyyy999/AImeetingPROJECT" },
     { name: "zh-skills", stars: 3, lang: "JavaScript", desc: "给中文开发者的 Claude Code 中文工程规范技能包:命名、注释、文档、commit、体检,一条命令装进 .claude/skills/。", link: "https://github.com/RazorEdge-wyh/zh-skills" },
     { name: "StyleSnap", stars: 2, lang: "HTML / Python", desc: "照片 + 提示词 → 百种风格。23 个手工调校的风格提示词,InstantID 身份保持,双语 Web 界面。", link: "https://github.com/RazorEdge-wyh/StyleSnap" },
     { name: "spare-me", stars: 2, lang: "JavaScript", desc: "一个 Claude Code 技能:当用户真的生气时让 AI 戏剧化地道歉,并把这次错误写进永久记忆。", link: "https://github.com/RazorEdge-wyh/spare-me" },
@@ -137,7 +147,7 @@ const CONTENT = {
   honors: [
     { title: "中鸣 RIC 机器人比赛 · 一等奖", meta: "省级 / 市级" },
     { title: "中鸣 RIC 机器人比赛 · 二等奖", meta: "省级 / 市级" },
-    { title: "GitHub 开源项目累计 9 stars", meta: "6 个公开项目" },
+    { title: "GitHub 开源项目累计 10 stars", meta: "6 个公开项目" },
     { title: "湖南科技大学 2026 级新生代表", meta: "上台领取校徽" }
   ],
 
@@ -168,7 +178,9 @@ const CONTENT = {
   email: "2160634966@qq.com",
   phone: "13908105242",
   links: [
-    { label: "GitHub", url: "https://github.com/RazorEdge-wyh" },
+    { label: "GitHub · RazorEdge-wyh", url: "https://github.com/RazorEdge-wyh" },
+    { label: "多 AI 交互系统(在线体验)", url: "https://aimeetinguipy-buikwpsprif94b8nufhrd4.streamlit.app/" },
+    { label: "AImeetingPROJECT 源码", url: "https://github.com/wyyyyy999/AImeetingPROJECT" },
     { label: "创新班作品展示站", url: "https://razoredge-wyh.github.io/my-site/" },
     { label: "ONE SHOT 源码", url: "https://github.com/RazorEdge-wyh/one-shot-godot" }
   ]
